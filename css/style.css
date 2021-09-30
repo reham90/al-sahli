@@ -14,7 +14,8 @@ html[dir="rtl"] body{
 html[dir="rtl"] .navigation{
   right: 38px;
   left: 0;
-   background: linear-gradient(-57deg, transparent 107px, #fff 20px);
+   background: linear-gradient(0deg, transparent 107px, #fff 20px);
+    background: #ffffff73;
 }
 html[dir="rtl"] .navigation:before{
   right: -42px;
@@ -217,7 +218,7 @@ html[dir="rtl"] .skew-bg-4{
  border-color: transparent transparent transparent #2a2772;
 }
 
-html[dir="rtl"].skew-bg-3{
+html[dir="rtl"] .skew-bg-3{
  background: transparent;
     position: absolute;
     bottom: 0;
@@ -605,7 +606,23 @@ html[dir="ltr"] .about-us{
 }
 html[dir="ltr"] .company{
   margin-left: 0;
+  background: linear-gradient(0deg, #fff 107px, #fff 20px)
 }
+html[dir="ltr"] .team{
+  background:linear-gradient(0deg, #f5f5f5 107px, #f5f5f5 20px);
+  }
+  html[dir="ltr"] .member-name{
+    height: 58px;
+  }
+  html[dir="ltr"] .news{
+  background:linear-gradient(0deg, #fff 107px, #fff 20px);
+  }
+  html[dir="ltr"] .footer-section{
+  background:linear-gradient(0deg, #2a2772 107px, #2a2772 20px);
+  }
+    html[dir="ltr"] .news-bg{
+    height: 58px;
+  }
 html[dir="ltr"] .about-us-img{
   margin-right: 0;
 }
