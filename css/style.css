@@ -109,8 +109,9 @@ html[dir="rtl"] .nav-nav ul li a{
   html[dir="rtl"] .re-hide{
      right: 186px;
   }
+  html[dir="rtl"] .slider-text{width: 790px;
 
-
+}
 
 
 html[dir="rtl"] .counter:after{
@@ -209,7 +210,7 @@ html[dir="rtl"] .skew-bg-4{
  position: relative;
  right: 92.9%;
  width: 0;
- top: -238px;
+ top: -237px;
  z-index: 9999999;
  height: 0;
  border-style: solid;
@@ -244,8 +245,8 @@ html[dir="rtl"] .banner img{
 @media only screen and (max-width: 480px)  {
  html[dir="rtl"] .navigation {
   right: 0;
-   background: linear-gradient(0deg, transparent 107px, #fff 20px);
-    background: #ffffff73;
+  background: linear-gradient(0deg, transparent 107px, #fff 20px);
+  background: #fff;
  }
 html[dir="rtl"] .drop-mobile{
   transform: translateX(-15px);
@@ -257,7 +258,8 @@ html[dir="rtl"] .language-2 .dropdown-content a{
   text-align: right;
 }
 html[dir="rtl"] .logo{
-  left: 15px;
+  /* left: 15px; */
+  margin-right: 46px;
 }
 html[dir="rtl"] .counter{
   margin-right: 0;
@@ -291,7 +293,7 @@ html[dir="rtl"] .accordion h3{
   text-align: right;
 }
 html[dir="rtl"] .about-us{
-  background: linear-gradient(0deg, transparent 107px, #f5f5f5 20px);
+  background: linear-gradient(0deg, #f5f5f5 107px, #f5f5f5 20px);
 }
 html[dir="rtl"] .vesion{
   background: linear-gradient(0deg, #0d8844 107px, #0d8844 20px);
@@ -475,7 +477,7 @@ html[dir="ltr"] .about-us-text h2{
 }
 html[dir="ltr"] .about-us-text a{
  text-transform: uppercase;
-     transform: translateX(63%);
+ /* transform: translateX(63%); */
 }
 html[dir="ltr"] .vesion-text h2 img{
   padding-right: 12px;
@@ -516,11 +518,13 @@ html[dir="ltr"] .work-text{
 html[dir="ltr"] .work-columns:after{
  left:195%;
  transform: skewY(-45deg);
+ height: 155px;
 }
 html[dir="ltr"] .banner:after{
     right: 35px;
     transform: scaleX(-1);
-    top: 70.3%;
+    top: 70.6%;
+    position: absolute;
 }
 html[dir="ltr"] .footer-section:after{
 right: 0;
@@ -556,15 +560,15 @@ html[dir="ltr"] .footer-section{
   }
 html[dir="ltr"] .skew-bg-4{
    background: transparent;
- position: relative;
- left: 91%;
- width: 0;
- top: -238px;
- z-index: 9999999;
- height: 0;
- border-style: solid;
- border-width: 0 0 165px 137px;
- border-color: transparent transparent #2a2772 transparent ;
+   position: relative;
+   left: 92.85%;
+   width: 0;
+   top: -237px;
+   z-index: 9999999;
+   height: 0;
+   border-style: solid;
+   border-width: 0 0 165px 137px;
+   border-color: transparent transparent #2a2772 transparent;
 }
 html[dir="ltr"] .skew-bg-3{
  background: transparent;
@@ -578,7 +582,10 @@ html[dir="ltr"] .skew-bg-3{
     border-color: transparent transparent #fff transparent ;
 
 }
+ html[dir="ltr"] .slider-text{
+  width: 934px;
 
+}
 
 
 
@@ -587,8 +594,8 @@ html[dir="ltr"] .skew-bg-3{
 @media only screen and (max-width: 480px)  {
   html[dir="ltr"] .navigation {
   left: 0;
-      background: linear-gradient(0deg, transparent 107px, #fff 20px);
-    background: #ffffff73;
+  background: linear-gradient(0deg, transparent 107px, #fff 20px);
+  background: #fff;
  }
 html[dir="ltr"] .slider-text p{
 margin-top: 1px;
@@ -604,10 +611,14 @@ html[dir="ltr"] .language-2 .dropdown-content a{
   text-align: left;
 }
 html[dir="ltr"] .logo{
-  right: 15px;
+  /* right: 15px; */
+  margin-left: 47px;
 }
 html[dir="ltr"] .counter{
   margin-left: 0;
+}
+html[dir="ltr"] .slider-text{
+  width: 100%;
 }
 html[dir="ltr"] .vesion{
   margin-left: 0;
@@ -718,7 +729,7 @@ button:focus{
   top: 45%;
   display: flex;
   flex-wrap: wrap;
-  width: 790px;
+ 
   justify-content: center;
   align-items: center;
 }
@@ -1249,7 +1260,7 @@ width: 153px;
 }
 .above{
       z-index: 99;
-    position: relative;
+      position: relative;
 }
 
 .team:after{
@@ -1810,11 +1821,9 @@ background: transparent;
 }
 .logo{
           margin: 0;
-    position: absolute;
-   
-    top: 7px;
-    width: 65px;
-   
+          /* position: absolute; */
+          top: 7px;
+          width: 65px;
 }
 .contact-us{
   display: none;
@@ -1841,8 +1850,9 @@ background: transparent;
 }
 
 .slider-text{
-  left: 0;
-  transform: translateX(0%);
+  /* top: 50%; */
+  /* left: 0; */
+  /* transform: translateY(-50%); */
 }
 .nav-list{
   padding:25px  20px;
@@ -1859,10 +1869,14 @@ background: transparent;
 }
 .slider-text h1{
   font-size: 21px;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 3%;
 }
 .slider-text p{
-  font-size: 11px;
-  margin-top: 15px;
+  /* font-size: 11px; */
+  /* margin-top: 15px; */
+  display: none;
 }
 .slider-text a{
   display: none;
@@ -1870,20 +1884,21 @@ background: transparent;
 
 .counter{
   margin: 0;
-  padding-top: 15px;
-    padding-bottom: 15px;
-    z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: 1;
 }
 .counter:after{
   width: 0;
   height: 0;
 }
 .counter-columns{
-  grid-template-columns: repeat(4,auto);
-    grid-gap: 15px;
+  grid-template-columns: repeat(2,auto);
+  display: grid;
+  grid-template-rows: repeat(2,auto);
 }
 .counter-block span{
-  font-size: 25px;
+  font-size: 26px;
 }
 .counter-block h2{
   font-size: 13px;
@@ -1898,7 +1913,7 @@ background: transparent;
 }
 .about-us-text span{
   margin-top: 0 !important;
-  padding: 15px 0;
+  padding: 60px 0 15px;
   text-align: center;
 }
 .about-us-text h2{
@@ -1917,22 +1932,25 @@ background: transparent;
 }
 .about-us-text a{
   width: 135px;
-    height: 42px;
-    font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-        transform: translateX(-63%);
+  height: 42px;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* transform: translateX(-63%); */
+  margin-left: auto;
+  margin-right: auto;
 }
 .about-us-text{
   padding: 0 15px;
+  padding-bottom: 10px;
 }
 .img-border{
   display: none;
 }
 .about-us{
-  padding-bottom: 22px;
+  padding-bottom: 40px;
   z-index: 1;
-   background: linear-gradient(0, #f5f5f5 107px, #f5f5f5 20px);
+  background: linear-gradient(0, #f5f5f5 107px, #f5f5f5 20px);
 }
 .vesion:after{
   width: 0;
@@ -1942,8 +1960,8 @@ background: transparent;
   display: none;
 }
 .vesion{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background: linear-gradient(0, #0d8844 107px, #0d8844 20px);
 }
 .vesion-columns{
@@ -1970,8 +1988,8 @@ background: transparent;
   height: 0;
 }
 .company{
-      padding-top: 30px;
-      padding-bottom: 74px;
+      padding-top: 40px;
+      padding-bottom: 85px;
       padding-right: 15px;
       padding-left: 15px;
       background: linear-gradient(
@@ -2009,7 +2027,7 @@ background: transparent;
 }
 .team{
    background: linear-gradient(0deg, #f5f5f5 107px, #f5f5f5 20px);
-   padding-top: 30px;
+   padding-top: 40px;
    height: 355px;
 }
 .team:after{
@@ -2069,7 +2087,7 @@ background: transparent;
 }
 .news{
   background: linear-gradient(0deg, #fff 107px, #fff 20px);
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 .news:after{
@@ -2163,7 +2181,7 @@ background: transparent;
 .footer-section{
   padding-top: 30px;
   background: linear-gradient(0deg, #2a2772 107px, #2a2772 20px);
-  margin-top: 30px;
+  margin-top: 0;
 }
 .footer-section:after{
   width: 0;
@@ -2246,7 +2264,8 @@ background: transparent;
 }
 .copy{
       flex-wrap: wrap;
-    justify-content: center;
+      justify-content: center;
+      padding-top: 15px;
 }
 .footer-list{
   margin-top: 0;
@@ -2266,8 +2285,12 @@ background: transparent;
 .dropbtn{
   color: #242424;
 }
-
-
+.banner{
+  display: none;
+}
+.work{
+  padding-bottom: 40px;
+}
 
 
 
