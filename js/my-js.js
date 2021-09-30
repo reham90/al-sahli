@@ -349,4 +349,14 @@ if($(window).width()<991){
   // end our-news carousel //
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+if($(window).width()>991){
+  if($('.timer').hasClass("bounceInRight")){
+  $(".timer").removeClass("bounceInRight").addClass("fadeIn");
+};
+ if($('.timer').hasClass("bounceInDown")){
+  $(".timer").removeClass("bounceInDown").addClass("fadeIn");
+};
+ if($('.timer').hasClass("bounceInLeft")){
+  $(".timer").removeClass("bounceInLeft").addClass("fadeIn");
+};
+}
