@@ -14,8 +14,7 @@ html[dir="rtl"] body{
 html[dir="rtl"] .navigation{
   right: 38px;
   left: 0;
-   background: linear-gradient(0deg, transparent 107px, #fff 20px);
-    background: #ffffff73;
+  background: linear-gradient(-57deg, transparent 107px, #fff 20px);
 }
 html[dir="rtl"] .navigation:before{
   right: -42px;
@@ -241,6 +240,8 @@ html[dir="rtl"] .skew-bg-3{
 @media only screen and (max-width: 480px)  {
  html[dir="rtl"] .navigation {
   right: 0;
+   background: linear-gradient(0deg, transparent 107px, #fff 20px);
+    background: #ffffff73;
  }
 html[dir="rtl"] .drop-mobile{
   transform: translateX(-15px);
@@ -285,17 +286,23 @@ html[dir="rtl"] .accordion{
 html[dir="rtl"] .accordion h3{
   text-align: right;
 }
-html[dir="rtl"] .search-mobile{
-  right: 62px;
+html[dir="rtl"] .about-us{
+  background: linear-gradient(0deg, transparent 107px, #f5f5f5 20px);
 }
-html[dir="rtl"] .search-screen{
-   left: 0;
+html[dir="rtl"] .vesion{
+  background: linear-gradient(0deg, #0d8844 107px, #0d8844 20px);
 }
-html[dir="rtl"] .close-icon{
-  right: 40px;
+html[dir="rtl"] .company{
+  background: linear-gradient(0deg, #fff 107px, #fff 20px);
 }
-html[dir="rtl"] .old{
-  margin-right: 0 !important;
+html[dir="rtl"] .team{
+  background: linear-gradient(0deg, #f5f5f5 107px, #f5f5f5 20px);
+}
+html[dir="rtl"] .news{
+  background: linear-gradient(0deg, #fff 107px, #fff 20px);
+}
+html[dir="rtl"] .footer-section{
+  background: linear-gradient(0deg, #2a2772 107px, #2a2772 20px);
 }
 html[dir="rtl"] .nav-nav ul li a, 
 html[dir="rtl"] .nav-nav ul li a:visited{
