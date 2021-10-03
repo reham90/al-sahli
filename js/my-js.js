@@ -2,95 +2,38 @@ $(document).ready(function() {
 
 // js for counter //
 
-(function($) {
-    $.fn.countTo = function(options) {
-        // merge the default plugin settings with the custom options
-        options = $.extend({}, $.fn.countTo.defaults, options || {});
+var a = 0;
+$(window).scroll(function() {
 
-        // how many times to update the value, and how much to increment the value on each update
-        var loops = Math.ceil(options.speed / options.refreshInterval),
-            increment = (options.to - options.from) / loops;
+  var oTop = $('.counter-columns').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
 
-        return $(this).each(function() {
-            var _this = this,
-                loopCount = 0,
-                value = options.from,
-                interval = setInterval(updateTimer, options.refreshInterval);
+        {
 
-            function updateTimer() {
-                value += increment;
-                loopCount++;
-                $(_this).html(value.toFixed(options.decimals));
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
 
-                if (typeof(options.onUpdate) == 'function') {
-                    options.onUpdate.call(_this, value);
-                }
-
-                if (loopCount >= loops) {
-                    clearInterval(interval);
-                    value = options.to;
-
-                    if (typeof(options.onComplete) == 'function') {
-                        options.onComplete.call(_this, value);
-                    }
-                }
-            }
         });
-    };
-
-    $.fn.countTo.defaults = {
-        from: 0,  // the number the element should start at
-        to: 100,  // the number the element should end at
-        speed: 1000,  // how long it should take to count between the target numbers
-        refreshInterval: 50000,  // how often the element should be updated
-        decimals: 0,  // the number of decimal places to show
-        onUpdate: null,  // callback method for every time the element is updated,
-        onComplete: null,  // callback method for when the element finishes updating
-    };
-})(jQuery);
-
-jQuery(function($) {
-        $('.timer').countTo({
-            from: 0,
-            to: 8,
-            speed: 1500,
-            refreshInterval: 50,
-            onComplete: function(value) {
-                console.debug(this);
-            }
-        });
-
-         $('.timer-2').countTo({
-            from: 0,
-            to: 42,
-            speed: 1500,
-            refreshInterval: 50,
-            onComplete: function(value) {
-                console.debug(this);
-            }
-        });
-
-          $('.timer-3').countTo({
-            from: 0,
-            to: 1000,
-            speed: 1500,
-            refreshInterval: 50,
-            onComplete: function(value) {
-                console.debug(this);
-            }
-        });
-
-          $('.timer-4').countTo({
-            from: 0,
-            to: 5000,
-            speed: 1500,
-            refreshInterval: 50,
-            onComplete: function(value) {
-                console.debug(this);
-            }
-        });
-
     });
+    a = 1;
+  }
+
+});
 
 // end js for counter //
 
@@ -291,7 +234,7 @@ new WOW().init();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // our-team carousel //
-if($(window).width()<991){
+
     var owl = $('.our-team');
     owl.owlCarousel({
         margin: 23,
@@ -310,18 +253,18 @@ if($(window).width()<991){
                 items:2
             },
             1200: {
-                items: 2
+                items: 4
             }
 
         }
     });
-  };
+ 
   // end our-team carousel //
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // our-news carousel //
-if($(window).width()<991){
+
     var owl = $('.our-news');
     owl.owlCarousel({
         margin: 23,
@@ -340,23 +283,13 @@ if($(window).width()<991){
                 items:2
             },
             1200: {
-                items: 2
+                items: 3
             }
 
         }
     });
-  };
+ 
   // end our-news carousel //
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if($(window).width()>991){
-  if($('.timer').hasClass("bounceInRight")){
-  $(".timer").removeClass("bounceInRight").addClass("fadeIn");
-};
- if($('.timer').hasClass("bounceInDown")){
-  $(".timer").removeClass("bounceInDown").addClass("fadeIn");
-};
- if($('.timer').hasClass("bounceInLeft")){
-  $(".timer").removeClass("bounceInLeft").addClass("fadeIn");
-};
-}
+
