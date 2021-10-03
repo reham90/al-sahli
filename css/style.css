@@ -176,6 +176,7 @@ html[dir="rtl"] .work-columns:after{
 }
 html[dir="rtl"] .banner:after{
  left: -198px;
+  content: url(../images/border.png);
 }
 html[dir="rtl"] .footer-section:after{
  left:0;
@@ -205,18 +206,7 @@ html[dir="rtl"] .skew-bg-2{
 html[dir="rtl"] .footer-section{
   background: linear-gradient(-145deg, transparent 107px, #2a2772 20px);
   }
-html[dir="rtl"] .skew-bg-4{
-   background: transparent;
- position: relative;
- right: 92.9%;
- width: 0;
- top: -237px;
- z-index: 9999999;
- height: 0;
- border-style: solid;
- border-width: 165px 0 0 137px;
- border-color: transparent transparent transparent #2a2772;
-}
+
 
 html[dir="rtl"] .skew-bg-3{
  background: transparent;
@@ -521,10 +511,9 @@ html[dir="ltr"] .work-columns:after{
  height: 155px;
 }
 html[dir="ltr"] .banner:after{
-    right: 35px;
+    right: -198px;
     transform: scaleX(-1);
-    top: 70.6%;
-    position: absolute;
+    content: url(../images/border-2.png);
 }
 html[dir="ltr"] .footer-section:after{
 right: 0;
@@ -558,18 +547,7 @@ html[dir="ltr"] .skew-bg-2{
 html[dir="ltr"] .footer-section{
   background: linear-gradient(145deg, transparent 107px, #2a2772 20px);
   }
-html[dir="ltr"] .skew-bg-4{
-   background: transparent;
-   position: relative;
-   left: 92.85%;
-   width: 0;
-   top: -237px;
-   z-index: 9999999;
-   height: 0;
-   border-style: solid;
-   border-width: 0 0 165px 137px;
-   border-color: transparent transparent #2a2772 transparent;
-}
+
 html[dir="ltr"] .skew-bg-3{
  background: transparent;
     position: absolute;
@@ -1547,7 +1525,7 @@ border: 1px solid transparent;
    border: 1px solid transparent;
 }
 .banner:after{
-          content: url(../images/border.png);
+         
     position: relative;
     top: -115px;
     z-index: 999;
@@ -1559,7 +1537,7 @@ border: 1px solid transparent;
 .footer-section{
   background: #2a2772;
   padding-top: 73px;
-  
+  position: relative;
   margin-top: 178px;
 }
 .footer-section:after{
@@ -1577,7 +1555,7 @@ border: 1px solid transparent;
 
 
 .map{
-      margin-top: -455px;
+      margin-top: -289px;
     width: 100%;
     height: 434px;
 
@@ -1743,7 +1721,7 @@ background: transparent;
   justify-content: flex-start;
 }
 .work{
-  padding-bottom: 89px;
+  padding-bottom: 130px;
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -2172,9 +2150,7 @@ background: transparent;
 .hidden-lg{
   display: block;
 }
-.skew-bg-4{
-  display: none;
-}
+
 .skew-bg-3{
   display: none;
 }
@@ -2182,6 +2158,7 @@ background: transparent;
   padding-top: 30px;
   background: linear-gradient(0deg, #2a2772 107px, #2a2772 20px);
   margin-top: 0;
+  position: relative;
 }
 .footer-section:after{
   width: 0;
