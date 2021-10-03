@@ -2115,7 +2115,7 @@ background: transparent;
   display: none;
 }
 .our-news .owl-dots{
-  bottom: -47px;
+  bottom: -30px;
 }
 .our-news .owl-dots .owl-dot span{
   width: 30px;
@@ -2140,7 +2140,7 @@ background: transparent;
   grid-template-columns: repeat(1,auto);
 }
 .work-text{
-  padding-top: 30px;
+  padding-top: 50px;
 }
 .work-text h2{
   text-align: center;
