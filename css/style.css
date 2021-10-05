@@ -2585,6 +2585,11 @@ background: transparent;
   border-left: 0;
   border-top: 0;
 }
+.language-2 .contact-us:hover{
+  background: #fff !important;
+  color: #2a2772 !important;
+}
+}
 }
 
 
