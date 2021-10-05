@@ -58,7 +58,7 @@ if($(window).width()<991){
     $('.nav-toggle').click(function() {
 $(".re-show").toggle();
 $(".re-hide").css("display" ,"block");
-$(".cover").toggle();
+
     });
   $('.re-show').click(function(event) {
  if (document.dir=="rtl") {
@@ -81,12 +81,10 @@ $('.re-hide').click(function(event) {
   }
   event.preventDefault();
  $("body").css("overflow" , "auto");
- $(".cover").toggle();
+
  $(".re-show").toggle();
 });
- $('.cover').on('click', function() {
-$(".re-hide").click();
- });
+
     
   }); // end DOM ready
 })(jQuery); // end jQuery83"9?"
@@ -105,7 +103,7 @@ if($(window).width()>991){
     $('.nav-toggle').click(function() {
 $(".re-show").toggle();
 $(".re-hide").css("display" ,"block");
-$(".cover").toggle();
+
     });
   $('.re-show').click(function(event) {
  if (document.dir=="rtl") {
@@ -129,7 +127,7 @@ $('.re-hide').click(function(event) {
   }
   event.preventDefault();
  $("body").css("overflow" , "auto");
- $(".cover").toggle();
+ 
  $(".re-show").toggle();
 });
 
@@ -137,9 +135,7 @@ $('.re-hide').click(function(event) {
 
 
 
- $('.cover').on('click', function() {
-$(".re-hide").click();
- });
+
     
   }); // end DOM ready
 })(jQuery); // end jQuery83"9?"
