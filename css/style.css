@@ -432,7 +432,7 @@ text-transform: capitalize;
     align-items: center;
     border-radius: 100%;
     position: absolute;
-    top: -140px;
+    top: -110px;
 }
  html[dir="ltr"] .about-us-img img{
   transform: scaleX(-1);
