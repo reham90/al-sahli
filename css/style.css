@@ -91,7 +91,7 @@ html[dir="rtl"] .nav-nav ul li a{
     align-items: center;
     border-radius: 100%;
     position: absolute;
-    top: -140px;
+    top: -110px;
   }
   html[dir="rtl"] .slider-text{width: 790px;
 
@@ -610,7 +610,7 @@ margin-top: 1px;
     padding: 0 15px;
 }
 html[dir="ltr"] .drop-mobile{
-  transform: translateX(-100px);
+  transform: translateX(-69px);
   }
   html[dir="ltr"] .language-2 i{
   padding-right: 7px;

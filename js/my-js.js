@@ -51,6 +51,12 @@ $(window).scroll(function() {
     $(".re-hide").click(function() {
         $(".menu-screen").removeClass("active");
     });
+      $('.dropdown').click(function(e) {
+      $('.drop-mobile').toggle();
+    
+
+      // Close one dropdown when selecting another
+    });
 // end  js for navbar //
 
 
