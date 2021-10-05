@@ -982,7 +982,7 @@ button:focus{
 }
 .nav-toggle i{
   cursor: pointer;
-  font-size: 20px;
+  font-size: 17px;
       color: #2a2772;
   position: absolute;
   content: "";
@@ -2405,6 +2405,9 @@ background: transparent;
 .banner:after{
   content: " ";
   background: transparent;
+  width: 0;
+  height: 0;
+  right: 0 !important;
 }
 .work-columns:after{
   width: 0;
@@ -2494,6 +2497,7 @@ background: transparent;
 .footer p{
       width: 100%;
     text-align: center;
+    margin-top: 10px;
 }
 
 .footer input{
