@@ -285,7 +285,7 @@ position: relative !important;
     top: 25%;
   }
 html[dir="rtl"] .drop-mobile{
-  transform: translateX(-15px);
+  transform: translateX(-46px);
   }
   html[dir="rtl"] .language-2 i{
   padding-right: 7px;
@@ -1089,8 +1089,9 @@ transition: 0.5s;
 }
 .dropdown:hover .dropdown-content {
   opacity: 1;
-visibility: visible;
-transition: 0.5s;
+  visibility: visible;
+  transition: 0.5s;
+  background: #fff;
 }
 
 .language-2{
