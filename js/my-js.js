@@ -40,130 +40,19 @@ $(window).scroll(function() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // start js for navbar //
-if($(window).width()<991){
-(function($) { // Begin jQuery36.
-  $(function() { // DOM ready
-    // If a link has a dropdown, add sub menu toggle.
 
-    // Clicking away from dropdown will remove the dropdown class
-  
-    $('.dropdown').click(function(e) {
-      $('.drop-mobile').toggle();
-      $(".up-arrow").toggle();
-      $(".down-arrow").toggle();
 
-      // Close one dropdown when selecting another
+
+ $(".nav-toggle").click(function() {
+        $(".menu-screen").addClass("active");
     });
-    // Toggle open and close nav styles on click
-    $('.nav-toggle').click(function() {
-$(".re-show").toggle();
-$(".re-hide").css("display" ,"block");
 
+    // Remove Active Class
+    $(".re-hide").click(function() {
+        $(".menu-screen").removeClass("active");
     });
-  $('.re-show').click(function(event) {
- if (document.dir=="rtl") {
-     $('nav ').css("right" , "0");
-}
-else{
-    $('nav ').css("left" , "0");
-
-}
-    $("body").css("overflow" , "hidden");
-$(".navv").toggle();
-  if ($('.nav-list').hasClass('dismiss')) {
-    $('.nav-list').removeClass('dismiss').addClass('selected').show();
-  }
-  event.preventDefault();
-});
-$('.re-hide').click(function(event) {
-  if ($('.nav-list').hasClass('selected')) {
-    $('.nav-list').removeClass('selected').addClass('dismiss');
-  }
-  event.preventDefault();
- $("body").css("overflow" , "auto");
-
- $(".re-show").toggle();
-});
-
-    
-  }); // end DOM ready
-})(jQuery); // end jQuery83"9?"
-}
-if($(window).width()>991){
-  (function($) { // Begin jQuery36.
-  $(function() { // DOM ready
-    // If a link has a dropdown, add sub menu toggle.
- 
-    // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-       
-    });
-    // Toggle open and close nav styles on click
-    $('.nav-toggle').click(function() {
-$(".re-show").toggle();
-$(".re-hide").css("display" ,"block");
-
-    });
-  $('.re-show').click(function(event) {
- if (document.dir=="rtl") {
-     $('nav ').css("right" , "0");
-}
-else{
-    $('nav ').css("left" , "0");
-
-}
-
-    $("body").css("overflow" , "hidden");
-$(".navv").toggle();
-  if ($('.nav-list').hasClass('dismiss')) {
-    $('.nav-list').removeClass('dismiss').addClass('selected').show();
-  }
-  event.preventDefault();
-});
-$('.re-hide').click(function(event) {
-  if ($('.nav-list').hasClass('selected')) {
-    $('.nav-list').removeClass('selected').addClass('dismiss');
-  }
-  event.preventDefault();
- $("body").css("overflow" , "auto");
- 
- $(".re-show").toggle();
-});
-
-
-
-
-
-
-    
-  }); // end DOM ready
-})(jQuery); // end jQuery83"9?"
-}
 // end  js for navbar //
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// start footer accordion  //
-if($(window).width()<991){
-   var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function myFunction(y) {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-  
-    $(this).siblings(".panel").slideToggle(200);
-
-  
-
-});
-}
-}
-//end footer accordion //
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // start slider carousel //
    var owl = $('.slider');
@@ -200,7 +89,7 @@ for (i = 0; i < acc.length; i++) {
 
 /// wow js ///
 new WOW().init();
-    });
+   
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // our-team carousel //
@@ -258,8 +147,28 @@ new WOW().init();
 
         }
     });
+  });
  
   // end our-news carousel //
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+if($(window).width()<991){
+   var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function myFunction(y) {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+  
+    $(this).siblings(".panel").slideToggle(200);
+
+  
+
+});
+}
+$(".accordion").click(function(){
+  $(this).children('i').toggle();
+ 
+});
+}
