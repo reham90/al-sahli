@@ -43,7 +43,7 @@
 
 <!-- start navigation -->
   <section class="navigation">
- <a class="nav-toggle" href="#!" ><i class="fas fa-bars re-show" ></i></a>
+ <a class="nav-toggle" href="#!" ><i class="fas fa-bars re-show" ><span class="menu">menu</span></i></a>
  <div class="logo">
   <a href="#"><img src="images/logo.png"></a>
   </div>
@@ -72,13 +72,14 @@
 
 
      <li class="language-2">
-  <div class="dropdown">
-    <button  class="dropbtn dropbtn-mobile">english <i class="fas fa-sort-down down-arrow"></i> <i class="fas fa-sort-up up-arrow"></i></button>
-      <div id="myDropdown" class="dropdown-content drop-mobile">
-      <a href="index-eng.html">english  </a>
-      <a href="index.html">arabic</a>
-      </div>
-    </div>
+<button class="contact-us">contact us</button>
+<ul class="social">
+    <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+   </ul>
      </li> 
 
      </ul>
@@ -93,7 +94,7 @@
       </div>
     </div>
  </div>
- <button class="contact-us">contact us</button>
+ <button class="contact-us hidden-xs">contact us</button>
 </div>
     </section>
 <!-- end naigation -->
@@ -195,12 +196,16 @@
   <div class="about-us-text wow fadeInLeft">
     <span>about </span>
     <h2>Al Sahli Holding Company Group</h2>
+    <div class="order-in-mobile">
+      <div class="about-parag">
     <p>Al-Sahli Holding is a company specialized in the field of manufacturing (steel structures, heavy and light metal industries, cooling cells, automatic electrical control panels and insulated panels) and it is the leading company in the implementation of projects</p>
     <a href="#">read more </a>
   </div>
+ 
   <div class="about-us-img wow fadeInRight">
     <img src="images/about-us.png" alt="about us">
-    
+    </div>
+     </div>
   </div>
  </div>
 </div>
@@ -229,21 +234,21 @@
 <div class="company ">
 <h2 class="wow fadeInDown">our companies </h2>
 <div class="container">
-   <div class="owl-carousel companies  owl-theme wow fadeInDown">
+   <div class=" companies   wow fadeInDown">
 
-  <div class="item wow fadeInLeft">
+  <div class="company-block wow fadeInLeft">
     <img  src="images/companies/comp-1.png" alt="company">
   </div>
    
-  <div class="item wow fadeInDown">
+  <div class="company-block wow fadeInDown">
     <img  src="images/companies/comp-2.png" alt="company">
   </div>        
   
-  <div class="item wow fadeInDown">
+  <div class="company-block wow fadeInDown">
  <img  src="images/companies/comp-3.png" alt="company">
   </div>
   
-  <div class="item wow fadeInRight">
+  <div class="company-block wow fadeInRight">
  <img src="images/companies/comp-4.png" alt="company">
   </div>
 
@@ -468,7 +473,7 @@
   </div>
 
  <div class="footer ">
-    <button class="accordion"><h3>important links </h3><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
+    <button class="accordion"><h3>important links </h3><i class="fas fa-angle-right hidden-lg hidden-md"></i></button>
     <ul class="footer-list panel">
       <li><a href="#">about us </a></li>
       <li><a href="#">famous questions </a></li>
@@ -479,7 +484,7 @@
   </div>
 
   <div class="footer ">
-    <button class="accordion"><h3>contact us via  </h3><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
+    <button class="accordion"><h3>contact us via  </h3><i class="fas fa-angle-right hidden-lg hidden-md"></i></button>
     <ul class="footer-list panel">
       <li><i class="fas fa-map-marker-alt"></i>Box 43192 Riyadh 11561 - Saudi Arabia </li>
       <li><i class="fas fa-phone"></i>+966114770000</li>
@@ -492,14 +497,15 @@
    
 
     <div class="footer ">
-    <h3>newsletter </h3>
+    <button class="accordion"><h3>newsletter </h3></h3><i class="fas fa-angle-right hidden-lg hidden-md"></i></button>
+    <div class="panel">
     <p>subscribe to get our news </p>
     <div class="newsletter">
     <input type="text" name="" placeholder="enter your email">
     <i class="fas fa-envelope envelope"></i>
     <button><i class="far fa-angle-right"></i> </button>
   </div>
- 
+ </div>
   </div>
 
 </div>

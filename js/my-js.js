@@ -199,33 +199,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-// companies carousel //
-if($(window).width()<991){
-    var owl = $('.companies');
-    owl.owlCarousel({
-        margin: 23,
-        nav: true,
-        rtl: document.dir == 'rtl' ? true : false,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
-        responsive: {
-            0: {
-                items: 3
-            },
-            600: {
-                items:3
-            },
-            1200: {
-                items: 3
-            }
 
-        }
-    });
-  };
-  // end companies carousel //
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// wow js ///
@@ -247,10 +221,10 @@ new WOW().init();
         navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
         responsive: {
             0: {
-                items: 2
+                items: 1
             },
             600: {
-                items:2
+                items:1
             },
             1200: {
                 items: 4
@@ -277,10 +251,10 @@ new WOW().init();
         navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
         responsive: {
             0: {
-                items: 2
+                items: 1
             },
             600: {
-                items:2
+                items:1
             },
             1200: {
                 items: 3

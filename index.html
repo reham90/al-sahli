@@ -43,14 +43,14 @@
 
 <!-- start navigation -->
   <section class="navigation">
- <a class="nav-toggle" href="#!" ><i class="fas fa-bars re-show" ></i></a>
+ <a class="nav-toggle" href="#!" ><i class="fas fa-bars re-show" ><span class="menu">القائمة  </span></i></a>
  <div class="logo">
   <a href="#"><img src="images/logo.png"></a>
   </div>
 
  <nav class="nav-nav">
    <ul class="nav-list dismiss navv" >
-    <li class="hidden-lg hidden-md"><i class="fas fa-times re-hide" ></i></li>
+    <li class="hidden-lg hidden-md"><i class="far fa-times re-hide" ></i></li>
 <li>
   <a href="#">الرئيسية  </a>
 </li>
@@ -72,13 +72,14 @@
 
 
      <li class="language-2">
-  <div class="dropdown">
-    <button  class="dropbtn dropbtn-mobile">العربية  <i class="fas fa-sort-down down-arrow"></i> <i class="fas fa-sort-up up-arrow"></i></button>
-      <div id="myDropdown" class="dropdown-content drop-mobile">
-      <a href="index.html">اللغة العربية   </a>
-      <a href="index-eng.html">english</a>
-      </div>
-    </div>
+  <button class="contact-us">تواصل معنا </button>
+  <ul class="social">
+    <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+   </ul>
      </li> 
 
      </ul>
@@ -94,7 +95,7 @@
       </div>
     </div>
  </div>
- <button class="contact-us">تواصل معنا </button>
+ <button class="contact-us hidden-xs">تواصل معنا </button>
 </div>
     </section>
 <!-- end naigation -->
@@ -196,13 +197,17 @@
   <div class="about-us-text wow fadeInRight">
     <span>نبذة عن  </span>
     <h2>مجموعة شركة السهلي القابضة  </h2>
+    <div class="order-in-mobile">
+      <div class="about-parag">
     <p>السهلي القابضة شركة متخصصة في مجال التصنيع )الهياكل الحديدية، الصناعات المعدنية الثقيلة والخفيفة، خلايا التبريد، لوحات التحكم الكهربائية الأتوماتيكية والألواح المعزولة ( وهي الشركة الرائدة في تنفيذ مشاريع  </p>
     <a href="#">اقرأ المزيد  </a>
   </div>
+  
   <div class="about-us-img wow fadeInLeft">
     <img src="images/about-us.png" alt="about us">
-   
+   </div>
   </div>
+</div>
  </div>
 </div>
 </div>
@@ -230,21 +235,21 @@
 <div class="company ">
 <h2 class="wow fadeInDown">شركاتنا  </h2>
 <div class="container">
-  <div class="owl-carousel companies  owl-theme wow fadeInDown">
+  <div class="companies wow fadeInDown">
 
-  <div class="item wow fadeInLeft">
+  <div class="company-block wow fadeInRight">
     <img  src="images/companies/comp-1.png" alt="company">
   </div>
    
-  <div class="item wow fadeInDown">
+  <div class="company-block wow fadeInDown">
     <img  src="images/companies/comp-2.png" alt="company">
   </div>        
   
-  <div class="item wow fadeInDown">
+  <div class="company-block wow fadeInDown">
  <img  src="images/companies/comp-3.png" alt="company">
   </div>
   
-  <div class="item wow fadeInLeft">
+  <div class="company-block wow fadeInLeft">
  <img src="images/companies/comp-4.png" alt="company">
   </div>
 
@@ -487,7 +492,7 @@
   </div>
 
  <div class="footer">
-    <button class="accordion"><h3>روابط هامة  </h3><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
+    <button class="accordion"><h3>روابط هامة  </h3><i class="fas fa-angle-left hidden-lg hidden-md"></i></button>
     <ul class="footer-list panel">
       <li><a href="#">من نحن  </a></li>
       <li><a href="#">الأسئلة الشائعة   </a></li>
@@ -498,7 +503,7 @@
   </div>
 
   <div class="footer ">
-    <button class="accordion"><h3>تواصل معنا عبر   </h3><i class="fas fa-angle-down hidden-lg hidden-md"></i></button>
+    <button class="accordion"><h3>تواصل معنا عبر   </h3><i class="fas fa-angle-left hidden-lg hidden-md"></i></button>
     <ul class="footer-list panel">
       <li><i class="fas fa-map-marker-alt"></i>ص.ب 43192 الرياض 11561 -  السعودية  </li>
       <li><i class="fas fa-phone"></i>966114770000+</li>
@@ -511,12 +516,14 @@
    
 
     <div class="footer ">
-    <h3>النشرة البريدية  </h3>
+     <button class="accordion"><h3>النشرة البريدية  </h3><i class="fas fa-angle-left hidden-lg hidden-md"></i></button>
+     <div class="panel">
     <p>اشترك ليصلك جديد  أخبارنا  </p>
     <div class="newsletter">
     <input type="text" name="" placeholder="ادخل بريدك الإلكتروني ">
     <i class="fas fa-envelope envelope"></i>
     <button><i class="far fa-angle-left"></i> </button>
+  </div>
   </div>
  
   </div>
