@@ -68,7 +68,7 @@ $(window).scroll(function() {
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 4000,
         autoplayHoverPause: true,
         navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
         responsive: {
@@ -107,7 +107,7 @@ new WOW().init();
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 4000,
         autoplayHoverPause: true,
         navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
         responsive: {
